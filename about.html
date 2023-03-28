@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>About Me</title>
+</head>
+<body>
+    <main>
+        <nav>
+            <h1>MarkDV</h1>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="navClose()"></i>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="navOpen()"></i>
+        </nav>
+            <div class="section">
+                <div class="container">
+                    <div class="content-section">
+                        <div class="title">
+                            <h1>About Me</h1>
+                        </div>
+                        <div class="content">
+                            <h3>I'm Currently Senior HighSchool Student. My main goal is to be a successful Web Developer to help people connect to each other across the world. </h3>
+                            <p>Without risk there is no reward.</p>
+                            <div class="button">
+                                <a href="">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-section">
+                        <img src="./img/me.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <!------ Javascript ------>            
+            <script>
+
+                const navLinks = document.getElementById("navLinks");
+
+                function navClose() {
+                    navLinks.style.right = "-200px"
+                }
+
+                function navOpen() {
+                    navLinks.style.right = "0"
+                }
+
+            </script>
+    </main>
+</body>
+</html>
