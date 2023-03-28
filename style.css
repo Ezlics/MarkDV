@@ -286,6 +286,10 @@ footer h3 {
 /*------ About -----*/
 @media screen and (max-width: 820px) {
 
+    body {
+        overflow-x: hidden;
+    }
+
     .container {
         width: 80%;
         min-height: 100vh;
@@ -344,7 +348,10 @@ footer h3 {
 /*---------- mainpage----*/
 @media screen and (max-width: 820px) {
     
-
+    body {
+        overflow-x: hidden;
+    }
+    
     nav h1 {
         font-size: 25px;
         padding: 20px;
